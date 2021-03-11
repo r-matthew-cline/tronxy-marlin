@@ -717,7 +717,7 @@
   // Define probe X and Y positions for Z1, Z2 [, Z3 [, Z4]]
   // If not defined, probe limits will be used.
   // Override with 'M422 S<index> X<pos> Y<pos>'
-  #define Z_STEPPER_ALIGN_XY { {  18, 172.5 }, { 350,  172.5 } }
+  #define Z_STEPPER_ALIGN_XY { {  30, 172.5 }, { 360,  172.5 } }
 
   /**
    * Orientation for the automatically-calculated probe positions.
@@ -772,7 +772,7 @@
 #define ASSISTED_TRAMMING
 #if ENABLED(ASSISTED_TRAMMING)
   // Define positions for probing points, use the hotend as reference not the sensor.
-  #define TRAMMING_POINT_XY { {  32, 40 }, { 355,  40 }, { 355, 310 }, { 32, 310 } }
+  #define TRAMMING_POINT_XY { {  45, 15 }, { 370,  15 }, { 370, 345 }, { 45, 345 } }
 
   // Define positions names for probing points.
   #define TRAMMING_POINT_NAME_1 "Front-Left"
